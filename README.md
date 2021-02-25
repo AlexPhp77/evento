@@ -23,3 +23,5 @@ Como utilizar o sistema?
 Necessário inserir ambiente onde o participante ficará e local de lanche para só então clicar 
 no botão organizar. Dessa forma será possível consultar os participantes por salas. 
 
+Importante que locais tenham a capacidade necessária para a soma dos participantes (ele até faz todas as relações mas não irá aparecer na pesquisa). 
+
