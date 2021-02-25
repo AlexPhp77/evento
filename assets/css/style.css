@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+.area-home{
+	width: 100%;
+	height: 100vh;
+	background-color: #338eab;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu{
+	height: 150px;
+	flex: 1;	
+	margin: 20px;
+	font-size: 10px;
+	text-align: center;
+	border-radius: 6px;
+	color: #5b0080;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+h1, h2{
+	height: 40px;
+	line-height: 40px;
+}
+.menu img{
+	height: 100%;
+}
+.titulo-pagina{
+	position: absolute;
+	padding: 20px;
+	color: #fff;
+}
+.modal-area{		
+	position: absolute;	
+	left: 0px;
+	width: 100%;
+	height: 100vh;		
+}
+.efeitoModal0{
+	display: none;	
+}
+.efeitoModal1{
+	display: none;	
+}
+.efeitoModal2{
+	display: none;	
+}
+.modal{
+	z-index: 100;
+	margin-left: 50%;
+	left: -200px;	
+	margin-top: 50px;
+	position: fixed;
+	background-color: #31849e;
+	border:1px solid #fff;
+	width: 400px;	
+	min-height: 200px;	
+	border-radius: 6px;
+	border:1px solid #fff;	
+	color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.fecharModal{
+	margin-top: -30px;
+	float: right;
+	font-size: 30px;
+	color: red;
+	cursor: pointer;
+}
+form{
+	display: flex;
+	flex-direction: column;
+}
+form label{
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+form input{
+	height: 40px;
+	width: 100%;
+	border-radius: 6px;
+	border: 1px solid #fff;
+}
+form input[type='submit']{
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #31849e;
+}
+form input[type='submit']:hover{
+	background-color: #338eab;
+}
+.mensagem-flash{
+	color: #e4b531;
+	font-size: 30px;
+	position: absolute;
+	margin-top: -400px;
+	text-align: center;
+}
+.botao{
+	position: absolute;
+	bottom: 20px;	
+}
+.botao button{
+	padding: 10px;
+	cursor: pointer;
+}
+.formulario{	
+	position: absolute;
+	top: 140px;	
+}
+.formulario form{
+	display: flex;
+	flex-direction: row;
+}
+.formulario label{
+	margin-left: 20px;
+}
+.formulario br{
+	margin:0;
+	padding: 0px;
+}
+.formulario input[type='submit']{
+	
+}
