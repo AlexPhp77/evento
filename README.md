@@ -18,3 +18,8 @@ Ou se preferir pode criar com outro nome, porém lembre-se de alterar o arquivo 
 
 Após, você poderá importar o banco de dados chamado teste.sql para seu servidor LOCAL.
 
+Como utilizar o sistema?
+
+Necessário inserir ambiente onde o participante ficará e local de lanche para só então clicar 
+no botão organizar. Dessa forma será possível consultar os participantes por salas. 
+
