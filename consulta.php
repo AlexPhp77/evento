@@ -71,8 +71,9 @@ if($sql->rowCount() > 0){
 	<?php
 
 } else {
-	echo "<div class='aviso-obs'>
-		Não há resultados!<br/>
+	echo "<div class='aviso-obs'>	
+		Não há resultados!
+		Verifique se digitou corretamente, caso esteja correto siga a etapa abaixo.<br/>
 		Para pesquisar insira no mínimo uma sala e um local de lanche, logo após clique em organizar/reorganizar para que o sistema insira os participantes em seus respectivos locais.
 	</div>";
 }
