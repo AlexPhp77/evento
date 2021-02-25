@@ -17,10 +17,19 @@ function fecharModal(){
 }
 
 botao.addEventListener('click', ()=>{
-	console.log('ajax teste');
 	$.ajax({
 		type:'POST',				
 		url:"organizar_evento.php",
+		success:function(){
+			
+		}
+    });
+});
+
+botao.addEventListener('click', ()=>{	
+	$.ajax({
+		type:'POST',				
+		url:"organizar_evento_lanche.php",
 		success:function(){
 			
 		}

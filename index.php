@@ -88,6 +88,10 @@
 				<label>
 					Salas:<br/>
 					<input type="text" name="salas">					
+				</label>
+				<label>
+					Espaço:<br/>
+					<input type="text" name="espaco">					
 				</label>				
 				<label>
 					<br/>
