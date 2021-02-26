@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 24-Fev-2021 às 17:59
+-- Generation Time: 26-Fev-2021 às 15:35
 -- Versão do servidor: 5.7.26
 -- versão do PHP: 7.2.18
 
@@ -41,8 +41,8 @@ CREATE TABLE IF NOT EXISTS `espaco_cafe` (
 --
 
 INSERT INTO `espaco_cafe` (`id`, `nome`, `lotacao_cafe`) VALUES
-(1, 'Café 1', 100),
-(2, 'Café 2', 100);
+(1, 'Local 1 Lanche', 5),
+(2, 'Local 2 Lanche', 5);
 
 -- --------------------------------------------------------
 
@@ -56,22 +56,51 @@ CREATE TABLE IF NOT EXISTS `pessoas` (
   `nome` varchar(50) NOT NULL,
   `sobrenome` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `pessoas`
 --
 
 INSERT INTO `pessoas` (`id`, `nome`, `sobrenome`) VALUES
-(1, 'Nome 1', 'Sobrenome '),
-(2, ' Nome 2', 'Sobrenome '),
-(3, ' Nome 3', 'Sobrenome '),
-(4, ' Nome 4', 'Sobrenome '),
-(5, ' Nome 5', 'Sobrenome  '),
-(7, 'Nome 7', 'Sobrenome '),
-(8, 'Nome 8', 'Sobrenome '),
-(9, 'Nome 9', 'Sobrenome '),
-(10, 'Nome 10', 'Sobrenome');
+(1, 'Alex', 'Sobrenome'),
+(2, 'Alexandre', 'Sobrenome '),
+(3, ' Ana', 'Sobrenome '),
+(4, 'Jo', 'Sobrenome '),
+(5, 'Pedro', 'Sobrenome  '),
+(11, 'Eduardo', 'Sobrenome'),
+(7, 'Bianca', 'Sobrenome '),
+(8, 'Henrique', 'Sobrenome '),
+(9, 'Paulo', 'Sobrenome ');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `pessoa_espaco_cafe`
+--
+
+DROP TABLE IF EXISTS `pessoa_espaco_cafe`;
+CREATE TABLE IF NOT EXISTS `pessoa_espaco_cafe` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pessoa_id` int(11) NOT NULL,
+  `espaco_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `pessoa_espaco_cafe`
+--
+
+INSERT INTO `pessoa_espaco_cafe` (`id`, `pessoa_id`, `espaco_id`) VALUES
+(19, 1, 1),
+(20, 2, 1),
+(21, 3, 1),
+(22, 4, 1),
+(23, 5, 1),
+(24, 11, 2),
+(25, 7, 2),
+(26, 8, 2),
+(27, 9, 2);
 
 -- --------------------------------------------------------
 
@@ -85,22 +114,22 @@ CREATE TABLE IF NOT EXISTS `pessoa_sala` (
   `pessoa_id` int(11) NOT NULL,
   `sala_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1813 DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=438989 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `pessoa_sala`
 --
 
 INSERT INTO `pessoa_sala` (`id`, `pessoa_id`, `sala_id`) VALUES
-(1804, 1, 1),
-(1805, 2, 1),
-(1806, 3, 1),
-(1807, 4, 1),
-(1808, 5, 1),
-(1809, 7, 2),
-(1810, 8, 2),
-(1811, 9, 2),
-(1812, 10, 2);
+(438980, 1, 1),
+(438981, 2, 1),
+(438982, 3, 1),
+(438983, 4, 2),
+(438984, 5, 2),
+(438985, 11, 2),
+(438986, 7, 3),
+(438987, 8, 3),
+(438988, 9, 3);
 
 -- --------------------------------------------------------
 
@@ -114,15 +143,16 @@ CREATE TABLE IF NOT EXISTS `salas` (
   `nome_sala` varchar(50) NOT NULL,
   `lotacao` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `salas`
 --
 
 INSERT INTO `salas` (`id`, `nome_sala`, `lotacao`) VALUES
-(1, 'Sala A', 5),
-(2, 'Sala B', 5);
+(1, 'Sala A', 3),
+(2, 'Sala B', 3),
+(3, 'Sala C', 3);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
